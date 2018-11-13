@@ -100,7 +100,7 @@ async function initReplicaSet(db) {
     await db.admin().command({
       replSetInitiate: {
         _id: "rs0",
-        members: [{ _id: 0, host: "localhost:27017" }]
+        members: [{ _id: 0, host: "mongo.api.reaction.localhost:27017" }]
       }
     });
   } catch (error) {
