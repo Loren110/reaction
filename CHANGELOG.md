@@ -1,3 +1,46 @@
+# v1.17.0
+This release contains mostly bug fixes, many of which are focused on Marketplace implementations. Thanks to @pmn4 for contributing many of the marketplace fixes and additions.
+
+There's also a little bit of cleanup of unused code in this release. This will likely be our last release on the 1.x line as our new work is focused on our 2.x version.
+
+## Features
+ - feat: Prioritize Primary when multiple Shops match domain (#3528)
+
+## Fixes
+ - fix: custom tax rates not applied (#4806)
+ - fix: console error tag name error pdp .. Resolves #4776 (#4790)
+ - fix: email settings update on cancel (#4792)
+ - fix: update detailView when its data changes (#4791)
+ - fix: submitting the template edit form now works .. Resolves #4774 (#4780)
+ - fix: edit groups panel (#4771)
+ - fix: add translated text for adding user to group by admin (#4562)
+ - fix: Hide Action View if Product Settings panel open (#4433)
+ - fix: Import `getSlug` instead of using `this.getSlug` (#4547)
+ - fix: Product Visibility for Marketplace Shops (#4425)
+ - fix: cart item attributes (#4607)
+ - fix: startup error before primary shop is created on initial startup (#4602)
+ - fix: avoid infinite looping when taxes are enabled (11e95ba) .. Resolves #4620
+ - fix: limit jest maxWorkers to 4 to improve CI perf (cd76a50)
+
+ ## Refactors
+ - refactor: Remove unused schemas (#4566)
+
+ ## Chores
+ - chore: Rename the reaction-api Docker network (#4613)
+ - chore: Use new CLI tool "propel" to deploy services to ECS (#4623)
+
+ ## Contributors
+ Thanks to @pmn4, @nadaa, and @janus-reith for contributing to this release! :tada:
+
+# v1.16.1
+## Security Hotfix
+
+### We discovered vulnerabilities that affect shops built on Reaction Commerce that use third-party oAuth services or SMS services.
+
+## Security Updates
+fix: dashboard routes available for unauthed users
+fix: service configuration publication vuln
+
 # v1.16.0
 ## GraphQL
 ### Features
